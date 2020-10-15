@@ -1,0 +1,23 @@
+<h5>Please input an ID to search:<input type="text" [(ngModel)]="id" (input)="searchById(id)"/></h5>
+
+
+
+<table class="table table-hover">
+    <thead class="thead-dark" >
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Active</th>
+        <th>Date of Birth</th>        
+
+      </tr>
+    </thead>
+    <tbody class="tbody-light">
+      <tr>
+        <td>{{searched.id}}</td>
+        <td>{{searched.name}}</td>
+        <td>{{searched.active}}</td>
+        <td>{{searched.dateOfBirth | date}}</td>
+      </tr>
+    </tbody>
+</table>
